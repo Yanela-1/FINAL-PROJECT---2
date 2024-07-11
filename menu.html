@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Coffee Needs Menu</title>
+        <link rel="stylesheet" href="style3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    </head>
+    <body>
+    <!--Nav Bar Start-->
+    <header>
+        <div class="navbar">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASdJREFUSEvFVUsWgjAMbHoSPYgKpxB2cgiRnbhTOITsxFOIeBA5CZH4wIe+prQ+P902nckk0wTElw98GV+wBIfIcaCu90KI0UASFUoZ+NuiUMWxBPlychIAjpFCxMJLL64xQZv9yQi8DUIpXZWKJwV5OEUbUC7WS8oH7m8JPpH9K8Z/bPpuL/q175QoFVhZtENirPo5AoDM250Dox4cw+m68WtMwSjl2N8WFWeArpxNpvE8KTdGBP2Pxn0gAnqKQwz89JLZEzAP7wTLyQIAaF6xSpU9OETOCOr6Sg856XRnUkp+2HVjQzPI8tVsLxAXRKayaJugun1WVrWdpkRpRcBYVKugX9+hGaXr09BGM9oJqHGajoCcRAQmK5OWjfIz/meaDtXc5v4GP6OeGRqGK10AAAAASUVORK5CYII="/>
+            <div class="logo"><a href="home.html">Coffee Needs</a></div>
+            <a href="index.html" class="logout">LOGOUT</a>
+            <ul class="navbar_link">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="home.html#about">ABOUT</a></li>
+                <li><a href="home.html#contact">CONTACT US</a></li>
+                <li><a href="app">DOWNLOAD APP</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="/>
+            </div>
+        
+            <div class="menubar">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <li><a href="app.html">DOWNLOAD APP</a></li>
+            </div>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const menuBar = document.querySelector('.menubar')
+
+        toggleBtn.onclick = function (){
+            menuBar.classList.toggle('open')
+            const isOpen = menuBar.classList.contains('open')
+        }
+    </script>
+    <!--Nav Bar End-->
+    <!--Menu Section Start-->
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>Explore Our Coffee</h2>
+        </div>
+        <div class="products-container" data-aos="fade-up">
+            <div class="box">
+                <img src="SaltedCaramelColdBrew.png" alt="">
+                <h3>Salted Caramel Cold Brew</h3>
+                <div class="content">
+                    <span>₱130</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="NitroVanillaSweetCreamColdBrew.png" alt="">
+                <h3>Nitro Vanilla Sweet Cream</h3>
+                <div class="content">
+                    <span>₱130</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="NitroColdBrew.png" alt="">
+                <h3>Nitro Cold Brew</h3>
+                <div class="content">
+                    <span>₱130</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="ColdBrew.png" alt="">
+                <h3>Cold Brew</h3>
+                <div class="content">
+                    <span>₱135</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="VanillaSweetCreamColdBrew.png" alt="">
+                <h3>Vanilla Sweet Cream</h3>
+                <div class="content">
+                    <span>₱135</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="DarkCaramelNitroColdBrew.png" alt="">
+                <h3>Dark Caramel Nitro</h3>
+                <div class="content">
+                    <span>₱140</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="IcedCaramelMacchiato.png" alt="">
+                <h3>Iced Caramel Macchiato</h3>
+                <div class="content">
+                    <span>₱145</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="IcedCappuccino.png" alt="">
+                <h3>Iced Cappuccino</h3>
+                <div class="content">
+                    <span>₱145</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="IcedCaffeMocha.png" alt="">
+                <h3>Iced Caffe Mocha</h3>
+                <div class="content">
+                    <span>₱145</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BurntCaramelLatte.png" alt="">
+                <h3>Burnt Caramel Latte</h3>
+                <div class="content">
+                    <span>₱145</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="CaramelCreamFrappuccino.png" alt="">
+                <h3>Caramel Cream</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="ChaiTeaCreamFrappuccino.png" alt="">
+                <h3>Chai Tea Cream</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="ChocolateChipCreamFrappuccino.png" alt="">
+                <h3>Chocolate Chip Cream</h3>
+                <div class="content">
+                    <span>₱150</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="StrawberriesandCreamFrappuccino.png" alt="">
+                <h3>Strawberries Cream</h3>
+                <div class="content">
+                    <span>₱155</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="WhiteChocolateCreamFrappuccino.png" alt="">
+                <h3>White Chocolate</h3>
+                <div class="content">
+                    <span>₱160</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="heading">
+            <h2>Try Our Pastries</h2>
+        </div>
+        <div class="products-container">
+            <div class="box">
+                <img src="NewYorkCheesecake.png" alt="">
+                <h3>New York Cheesecake</h3>
+                <div class="content">
+                    <span>₱110</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BlueberryLiciousCheesecake.png" alt="">
+                <h3>Blueberry Cheesecake</h3>
+                <div class="content">
+                    <span>₱110</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="ClassicChocolateCake.png" alt="">
+                <h3>Classic Chocolate Cake</h3>
+                <div class="content">
+                    <span>₱115</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BanoffeePie.png" alt="">
+                <h3>Banoffee Pie</h3>
+                <div class="content">
+                    <span>₱130</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="DarkChocolateMacadamiaCookie.png" alt="">
+                <h3>Chocolate Chip Cookie</h3>
+                <div class="content">
+                    <span>₱130</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="SausageRoll.png" alt="">
+                <h3>Sausage Roll</h3>
+                <div class="content">
+                    <span>₱135</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="GlazedDoughnot.png" alt="">
+                <h3>Glazed Doughnut</h3>
+                <div class="content">
+                    <span>₱135</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="FrenchButterCroissant.png" alt="">
+                <h3>Butter Croisant</h3>
+                <div class="content">
+                    <span>₱145</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="SausageandBaconFlatbread.png" alt="">
+                <h3>Sausage Flatbread</h3>
+                <div class="content">
+                    <span>₱145</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="ChocoDippeddough.png" alt="">
+                <h3>Choco Doughnut</h3>
+                <div class="content">
+                    <span>₱145</span>
+                    <a href="#"> Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Menu Section End-->
+    </body>
+</html>

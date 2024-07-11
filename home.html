@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Coffee Needs</title>
+        <link rel="stylesheet" href="style3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    </head>
+    <body>
+        <script>AOS.init();</script>
+        
+        <!--Nav Bar Start-->
+        <header>
+            <div class="navbar">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASdJREFUSEvFVUsWgjAMbHoSPYgKpxB2cgiRnbhTOITsxFOIeBA5CZH4wIe+prQ+P902nckk0wTElw98GV+wBIfIcaCu90KI0UASFUoZ+NuiUMWxBPlychIAjpFCxMJLL64xQZv9yQi8DUIpXZWKJwV5OEUbUC7WS8oH7m8JPpH9K8Z/bPpuL/q175QoFVhZtENirPo5AoDM250Dox4cw+m68WtMwSjl2N8WFWeArpxNpvE8KTdGBP2Pxn0gAnqKQwz89JLZEzAP7wTLyQIAaF6xSpU9OETOCOr6Sg856XRnUkp+2HVjQzPI8tVsLxAXRKayaJugun1WVrWdpkRpRcBYVKugX9+hGaXr09BGM9oJqHGajoCcRAQmK5OWjfIz/meaDtXc5v4GP6OeGRqGK10AAAAASUVORK5CYII="/>
+                <div class="logo"><a href="#">Coffee Needs</a></div>
+                <a href="index.html" class="logout">LOGOUT</a>
+                <ul class="navbar_link">
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                    <li><a href="app">DOWNLOAD APP</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="/>
+                </div>
+            
+                <div class="menubar">
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                    <li><a href="app.html">DOWNLOAD APP</a></li>
+                </div>
+            </div>
+        </header>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const menuBar = document.querySelector('.menubar')
+
+            toggleBtn.onclick = function (){
+                menuBar.classList.toggle('open')
+                const isOpen = menuBar.classList.contains('open')
+            }
+        </script>
+        <!--Nav Bar End-->
+        <!--Home Section Start-->
+        <section class="home" id="home" data-aos="zoom-in">
+            <div class="home-text">
+                <h1>Fuel your day <br> with the perfect brew</h1>
+                <p>Life begins with a great coffee. Satisfy your coffee needs with the perfect blend.</p>
+                <a href="menu.html" class="btn" id="btn2">EXPLORE OUR MENU</a>
+            </div>
+            <div class="home-img">
+                <img src="newheroimage.png" alt="heroimg">
+            </div>
+        </section>
+        <!--Home Section End-->
+        <!--About Section Start-->
+        <section class="about" id="about">
+            <div class="about-text">
+                <h2>About Coffee Needs</h2>
+                <p>Welcome to Coffee Needs, your go-to destination for the finest coffee experiences! <br>At Coffee Needs, we believe that a great cup of coffee is more than just a drink—it's a ritual, <br>a moment of peace, and a burst of energy to start your day or keep you going. Here’s our story:</p>
+            </div>
+            <div class="card-container" data-aos="fade-up">
+                <div class="card">
+                    <h2>Our Journey</h2>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZVJREFUSEu1VcthwjAMlZxFwiBAOkXDDYYg5QbcKAwBPZFOQQiD1IvYKnZJ6iT+cSBXOXpPT9ITwos/fHF+eArgvBzPkbEpEGUtMSIOjHFC3M52Fe8TjgL4LiZrApgDQOqrmIgWkCSVCeQFOK+yFIU4AuI/YxsC4omkvEKS8NmuqswnToDzKstQyouHMSfGFmZCRQiEyMwqrADB5ERVfri9KXDdF8S1Kd896eZ9X29VfACgZZHyx8c839cjTUKItVU+g8AAoFyOLz7NibGRZuYnAfm+1rk7AI9p2bjYN6WH3gEAV1UOAMpioqRxjmIDUBYT8i6oTaII7YEYU43lIXmsTY4oW+v6mJpjaOFmh9upI1GouY2uEURa/bsA8fpH9ampsJ2iQIM1q2cWcAjgnv/WEmJION3Uqi3iKf+8LtRPoR6pCesbXacHplGpQGO5Nq/psRyYntdNlc4gRGocFvcNMBbKs/3dUARjuF+0ipJEXbCO91tPhQu5/JgeQco/9ogpEHEC+OpfrNBNjzqZoSS++MsBfgG2v/IZ4zyn+gAAAABJRU5ErkJggg=="/>
+                    <p>Our journey began in a small corner of the city where coffee lovers gathered to share their passion for exceptional brews. Since then, we’ve grown into a coffee shop known for our dedication to quality, sustainability, and community.</p>
+                </div>
+                <div class="card">
+                    <h2>Our Coffee</h2>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATlJREFUSEu9lsERgkAMRTdUooWIWIVw0yJEb+pNsQi8gVWAWIg2ItFlhEHILlkVuZL8l5CfDCB6fqBnfaEExItRIgAcVgEAR3d/nlOxJCBajGYAELLEX0GIOPcOl2MzhwTEvn0VQgxUSXWRWjE3N8iGnYCuhKZAtHIGcL+H8nNSBb11EPs2mnwWVawbZJXufwGyotI9aFkTb5emnI6ileNAnicCMXUPl0k9pzXkCqBwBQWs5kbYtQU4+fb6OYjN88VmGmRbTge6nBagapej3IjpdJGM/wpgWUNvl960Myh8nedy0Ywf5AAKJ324D3X/l9XRp8Lk0JVKhEXlq98BFBeVBJhYtSuWPteazWxOPl6OQ4E4MzrXutVvAcrTTjhIOYNPrEpZVAkorPpqnbUMCgdpASxhRlDvfxUPNwLCGQe51woAAAAASUVORK5CYII="/>
+                    <p>Each bean is carefully selected and roasted to perfection to ensure that every cup of Coffee Needs coffee is rich, flavorful, and unforgettable. We have something to satisfy every coffee lover’s palate.</p>
+                </div>
+                <div class="card">
+                    <h2>Our Philosophy</h2>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKhJREFUSEtjZKAxYKSx+Qz0s2B5hYMD49+/9QyMjA4U+er//wP/mZkbIzsOHACZA/fBijK7+wwMDAoUGQ7T/P//gYjuw47oFvwHCUR0HcIZbCvK7MBqiAEwc5B9MLgswOZTZB9S7AOaW0AoHij2Ac0toHkQ0dwCmgfRqAVYQ2DQl0XUK64ZGB5EdB1SRCmuwRXOv3/zKa4TcFU4hJIdufL0q5PJdSEhfQCKSKIZwzjH+AAAAABJRU5ErkJggg=="/>
+                    <p>We believe that every cup of coffee should be an experience—crafted with care, served with a smile, and enjoyed in a welcoming atmosphere. We strive to create a space where people can connect and savor the simple pleasure of a great coffee.</p>
+                </div>
+                <div class="card">
+                    <h2>Community and Sustainability</h2>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZdJREFUSEvVVUt2gkAQ7J6T4EE0eIrgSj2ExJ26S/AQkpXkFBI8SLgI07FhmgzId+F7ho1PmenqqupqER784IPrw/MCRG8vJ0I8LN7jtEuFTgbnzXSFAEtAdLgIAoSvQXI4b10Xtb4AQEpKzbtAWgG+/NmOAPZ33SGG3LkBcG4F9gzaxqIR4Lx1HdT6x3S910p9Qpa5iHgyXa/5U86QUpM2Fs0ALA0XQwy9j28ulj/RZnoBRJeI1ovjNax/b2LRxqDQmCj2jtd5L0DhQzwG4E4ipfVSPBFJIn92+wlgtER8qc1kMdV6n3pBMhllshzOixC5rHtuqoypeFQcTInowJ4MlqhvfXAOIMscRNwBgGSkcVwbTa51buOlNzYxEqUy+0aqFQM1ZaICkM9/lvF4siR9T5li26+64RUAmes2XbkBE7hCGmuMeTcBEa+WilQlQL53TFK7poJpmaTzLnIkdOX9WnZKAOlALvTpUy48m4XJhRckZd0/AH/Gu8fpCo0Nau2rYTmQVNrofSyG3Hnef7Q+dvL+/zP4BU/fFChFscKTAAAAAElFTkSuQmCC"/>
+                    <p>Coffee Needs is dedicated to reducing our environmental footprint by using eco-friendly materials, supporting local suppliers, and participating in community initiatives. We believe that by making small changes, we can make a big impact.</p>
+                </div>
+            </div>
+        </section>
+        <!--About Section End-->
+        <!--Contacts Start-->
+        <section class="contact" id="contact">
+            <h2 class="heading"> Contact <span>Us</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="emai" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Name">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+        <!--Contacts End-->
+        <!--Footer Start-->
+        <footer class="footer">
+            <div class="social">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAY9JREFUSEvFVTtOw1AQnKmp6aFHIC4A5BhISJAWCSROALkBCKgJEhI9FyDcAHEBQkVBT0GzvHmsTfz8UWwrypMiK7Z3Z2Y/Y2LBhwvOj+UAmNkagEMAe/6rEzr1BxMAI5LZ//z9kgIzOwJw16F0Sj4mOZqNLQA48/cOybMQgQxJSlE8KYCYS0GbMwCwGwIuPEgqhnUAYq/6V51xABfDD08oIlOS60lZJyQFWqnAKjLnss1sNcomv7ycz/7+LKkI2gZAbH4AHDhzkXgB8ADgM0xbqWeh0Xnp0x6kCmI9A/NbAMeJuhuSJ2YmFRrn/LQBULOenPFGAvBGcsvMzmca/Ff3Fgo0GdehNGK5mQC8ktzuCxAnwsyuAJwmAJckz8ysNNptFMQJAvANYB/AjoOoyY8AVlxdAbsNgAJL26mbZqbGZmM6N0BpIjxSIFr/zMyaTLBx0bpYRbqbjVahjexjdgIb1Jqd17arXStcTirP+l+6Cu9RA6VEC6RrYUtrvEpJ7+f64FQB9rm3nG9yH8Zp7C8MPqIZSfZ3pAAAAABJRU5ErkJggg=="/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU9JREFUSEu1VYFtAyEM9E3SZpI2k7SZpMkkTSdpMkmzifv34i0/mAeUBCniFcBn+44D8uSBJ8eXJoCqvovIm4hw5u82zZc0XwHwuzqqAKr6KiLfKehWDALuAXAuRgigql/TzuNA+xj8DOCUnykABoIzKKv045iDrABSW/42MmfQE4DzsidLiOsHz0sO8Nvo+S7vdVDxDcBuScAAVPUzkVorgD0+uMzZng+nLn+OpM/q8gAtYq2/HcnYXg9ASbKK2mBv5953COECYJ9XQHJzVXiwEQDjwVcQAawIi0pT1VAYk1zn2B4g2tgDECVmgmiRPNvAnImzgnRfloKiexMC0MhYxSNINr5GLlovyaagFQdJflRRzSp6AeySFQANjfcAbJtdxcCWv1sAtu5JHHlwagCFg3YBBKZmz2PyohcR+am9ZIWbbsjzrqXmo39X9OnwPxbdvRmb0tB0AAAAAElFTkSuQmCC"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASZJREFUSEvFVdF1wjAMvNukbAKTtExSmIQwCdmkbHLl3rN5jpET0iSv+smLY+mkk3QhNjZuHB+zASRdAHylxO4kd2NJLgVw7B3JewtkDYCO5HFLAMc+kTxHIGtUkOP2D7quAPqSsjUBMtCAsv8FkPQB4BOAn1eSfT2mAA7pjkfX96YrSIFvySGXfiTZje2B/eqRfaFI0h6Ag9c2CfDWFEn6qTK3nxfpPFXBJIAk82gpeI4eSXP8tEVSUTnjsTwRhX/XIknm3j2whRKwtIISIFTKqkejOuQsBxQEPRhojKRv607RktkAXhRPUWldejF1/l7aqFS/VOCDoIpo+nzWVNDSIdSigIoa5K3gYQU5UqFDWWO8bKbLmtT8g9WZzFbTFl+t880BfgH8wpwZsLYzOAAAAABJRU5ErkJggg=="/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASdJREFUSEvlVdEVgjAMvGwik6iTIJOokwiT6CaySeR8qRaaYvvhF3mPh0Daa+4uUfDnkD/vj40CqOoBwBnAzijuReSqqnxu+TtQP6NIVe8AOhEZc9qo6gnAzfnONQTg+j4HoACY+D6RB6KqzMkF1z4ADCLC+1dkK+8ZrbxY4qealdPHgMew+QyAD0YR+Q3BzXkNdicFHj0hn5V3MdpSA/Ibi1fbJnkAh6LazZk/E7iEolqQZunAJUXkmFYN/q4CmJyXTIbkhTVRO4lKPWoioSehyJyUa6Q1sFFEGi/BHXZTM9FJ7IPSmHk/a9P4Q5grBUAuNWEvT4MgMKv4pUP25AmAnbjUQZwzq0PRrcBAOCr2ZtXYrvEgy07bpWgb/Ucr9a7baDWLS3JfYxhuGZSo7CUAAAAASUVORK5CYII="/>
+            <ul class="list">
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="#"> About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                © COFFEE NEEDS | All Rights Reserved
+            </p>
+        </footer>
+        <!--Footer End-->
+        <!--LINK TO SJ FILE-->
+        <script src="index.js"></script>
+    </body>
+</html>
